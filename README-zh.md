@@ -22,6 +22,20 @@ pip install -r requirements.txt
 
 coming soon...
 
+## 教程
+
+### 1.软件安装
+
+Anaconda：https://www.anaconda.com/
+
+LGhub：https://www.anaconda.com/
+
+
+
+
+
+
+
 
 
 
