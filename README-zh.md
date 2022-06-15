@@ -27,7 +27,7 @@
 
 Python : https://www.python.org/
 
-Anaconda : https://www.anaconda.com/
+Anaconda : [Anaconda的安装教程](https://github.com/Lucid1ty/Yolov5ForCSGO/blob/main/InstallationTutorial/zh/Anaconda.md)
 
 Pycharm : https://www.jetbrains.com/pycharm/
 
