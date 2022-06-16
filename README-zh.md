@@ -43,7 +43,7 @@ LGhub：https://www.anaconda.com/
 
 ### 4.数据处理
 
-数据标注：利用打标软件给图片打标
+数据标注：利用 [打标软件](https://github.com/tzutalin/labelImg) labellmg 给图片打标
 
 ### 5.训练模型
 
