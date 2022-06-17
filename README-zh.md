@@ -39,7 +39,9 @@ LGhub：https://www.anaconda.com/
 
 ### 3. 数据获取
 
-在游戏中截图
+**在游戏中截取人物图片**
+
+利用 Python 代码截图 : https://github.com/Lucid1ty/Screenshot
 
 ### 4.数据处理
 
