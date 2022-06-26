@@ -1,0 +1,7 @@
+path: datasets/CSGOData  # dataset root dir
+train: Pictures  # train images (relative to 'path')
+val: Labels  # val images (relative to 'path') 
+test:  # test images (optional)
+# Classes
+nc: 2  # number of classes
+names: ['head', 'body']  # class names
