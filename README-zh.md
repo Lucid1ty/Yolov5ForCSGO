@@ -117,13 +117,20 @@
 
 打开 Anaconda Prompt :
 1. 激活 pytorch3.8 环境
+
 2. 切换目录到 labelImg-master 下
+
 3. 执行命令 : `python .\labellmg.py`
-	如果出现这样的**报错** : ModuleNotFoundError: No module named 'libs.resources'
-	解决办法 : 
-	Step 1 : 运行 : `pyrcc5 -o resources.py resources.qrc`
-	Step 2 : 将生成的 resources.py 复制到同级的 libs 目录下
-	再次执行 `python .\labellmg.py`即可
+
+  如果出现这样的**报错** : ModuleNotFoundError: No module named 'libs.resources'
+
+  解决办法 : 
+
+  1. 运行 : `pyrcc5 -o resources.py resources.qrc`
+
+  2. 将生成的 resources.py 复制到同级的 libs 目录下
+
+  再次执行 `python .\labellmg.py`即可
 
 正确运行后会出现这样的界面 :
 
@@ -149,9 +156,11 @@
 
 #### 5.1 存放已打标数据
 
-进入与 yolov5-master 同级的目录 datasets
+有一个与 yolov5-master 同级的目录 datasets
 
-复制 datasets 中的 coco128 到当前目录，然后重命名为 CSGOData
+进入 datasets
+
+复制 coco128 到当前目录，然后重命名为 CSGOData
 
 进入 CSGOData/images/train2017，然后删除其中的全部内容，此时将 Picture 中的全部内容粘贴至此
 
@@ -173,7 +182,7 @@ nc: 1  # number of classes
 names: ['head']  # class names
 ```
 
-将 train.py 中参数 --cfg 那行的代码 :
+打开 train.py，将 train.py 中参数 --cfg 那行的代码 :
 
 ```python
     parser.add_argument('--cfg', type=str, default='', help='model.yaml path')
