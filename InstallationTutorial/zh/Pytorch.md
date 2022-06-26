@@ -1,12 +1,18 @@
 # Pytorch 安装
+
 在下载安装好 Anaconda 之后，我们开始安装 Pytorch
 
 1. 创建环境
-	打开 Anaconda Prompt (在你安装完 Anaconda 之后按 WIN 键，然后搜索) :![image-20220626165815333](https://raw.githubusercontent.com/Lucid1ty/images/main/picture/image-20220626165815333.png)
-	输入 : `conda create -n pytorch3.8 python=3.8`
-	上面这条命令中的 pytorch3.8 是这个环境的名字，由你自己指定(取的名字自己要知道什么意思，不然后期环境多了你就懵了)
 	
-2. 切换到刚刚创建的环境
+	打开 Anaconda Prompt，在你安装完 Anaconda 之后按下 Win 键就应该能看到
+	如果没有，按 WIN 键，然后搜索 : Anaconda Prompt
+	![image-20220626165815333](https://raw.githubusercontent.com/Lucid1ty/images/main/picture/image-20220626165815333.png)
+	打开之后在其中输入 : `conda create -n pytorch3.8 python=3.8`
+	上面这条命令中的 pytorch3.8 是这个环境的名字，同时 python=3.8 指定了我们安装的 python 版本为 3.8
+	⭐你最好和我取一样的名字，后面我一说激活 pytorch3.8 环境你就知道是哪个环境了
+	等待它创建完成
+	
+2. 激活刚刚创建的环境并执行安装
 	输入 : `conda activate pytorch3.8`
 	激活这个环境后你应该看到最前面的名称是 : pytorch3.8 而不是 base
 	然后我们进入 Pytorch 的官网 : https://pytorch.org/
@@ -19,6 +25,17 @@
 	回到 Anaconda Prompt 中 :
 	确保任然在 pytorch3.8 这个环境中
 	把指令粘贴进去，回车执行
-	等待按照完成即可
+	等待安装完成即可
 
-这时，我们已经安装好 Pytorch 了
+这时，我们已经在创建的环境(pytorch3.8)中安装好了 Pytorch
+
+3. 检验安装是否正确
+	1. 确保任然在 pytorch3.8 这个环境中
+	2. 输入 : `python` 然后回车
+	3. 在出现的 >>> 后面写上 : `import torch` 然后回车
+	4. 第一次执行需要等待一会，等待它再次出现 >>> 
+	5. 然后输入 : `torch.cuda.is_available()` 并回车
+	6. 如果你的显卡支持 Cuda 并且正确的安装了 Pytorch，那么你应该看到 True。如果你的显卡不支持 Cuda 并且你安装的是 CPU 版本的 Pytorch，那么你应该看到 False (这是正确的显示)
+	6. 如果你的显示不正确，那么请回头检查每一步，指导正确为止
+
+至此，Pytorch 的安装完成！
