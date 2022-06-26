@@ -2,13 +2,13 @@
 
 ## 项目介绍
 
-本项目利用 [yolov5](https://github.com/ultralytics/yolov5) 实现 CSGO (Counter-Strike:Global Offensive)游戏中的人物检测
+本项目利用 [Yolov5](https://github.com/ultralytics/yolov5) 实现 CSGO (Counter-Strike:Global Offensive)游戏中的人物检测
 
-## 快速上手(使用教程)
+## 快速上手
 
 1. 克隆本项目
 
-	git clone git@github.com:Lucid1ty/Yolov5ForCSGO.git
+	git clone git@github.com : Lucid1ty/Yolov5ForCSGO.git
 
 2. 切换到本项目的目录下
 
@@ -21,11 +21,9 @@
 4. 使用
 	施工中...
 
-## 技术教程(从0开始自己编写代码实现)
+## 技术教程
 
 ### 1. 软件安装
-
-Python : https://www.python.org/
 
 Anaconda : [Anaconda安装教程](https://github.com/Lucid1ty/Yolov5ForCSGO/blob/main/InstallationTutorial/zh/Anaconda.md)
 
@@ -33,15 +31,31 @@ Pycharm : [Pycharm安装教程](https://zhuanlan.zhihu.com/p/529688095)
 
 VSCode : https://code.visualstudio.com/
 
+Pytorch : [Pytorch安装教程]()
+
 LGhub：https://www.anaconda.com/
 
-#### 1.2 Pytorch教程
-
-参考这个视频教程 : https://www.bilibili.com/video/BV1hE411t7RN
 
 
 
-### 2. 拉取Yolov5仓库代码
+
+
+
+
+
+
+
+### 2. 拉取 Yolov5 代码
+
+进入 Yolov5 的仓库 : https://github.com/ultralytics/yolov5
+
+下载下来后，解压
+
+放到一个合适的位置
+
+
+
+
 
 ### 3. 数据获取
 
