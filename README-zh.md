@@ -25,36 +25,36 @@
 
 ### 1. 软件安装
 
-Anaconda : [Anaconda安装教程](https://github.com/Lucid1ty/Yolov5ForCSGO/blob/main/InstallationTutorial/zh/Anaconda.md)
+按照顺序安装即可
 
-Pycharm : [Pycharm安装教程](https://zhuanlan.zhihu.com/p/529688095)
+1. Anaconda : [Anaconda 安装教程](https://github.com/Lucid1ty/Yolov5ForCSGO/blob/main/InstallationTutorial/zh/Anaconda.md)
 
-VSCode : https://code.visualstudio.com/
+2. Pycharm : [Pycharm 安装教程](https://zhuanlan.zhihu.com/p/529688095)
 
-Pytorch : [Pytorch安装教程]()
+3. VSCode : https://code.visualstudio.com/
 
-LGhub：https://www.anaconda.com/
+4. Pytorch : [Pytorch 安装教程](https://github.com/Lucid1ty/Yolov5ForCSGO/blob/main/InstallationTutorial/zh/Pytorch.md)
 
+5. LGhub：https://www.anaconda.com/
 
-
-
-
-
-
-
-
-
-
-### 2. 拉取 Yolov5 代码
+### 2. 获取代码
 
 进入 Yolov5 的仓库 : https://github.com/ultralytics/yolov5
 
-下载下来后，解压
+下载下来解压，然后放到合适的位置
 
-放到一个合适的位置
+用 Pycharm 打开整个 Yolov5 的文件夹
 
+为此项目设置 Python 解释器，选择刚刚利用 Anaconda Prompt 安装好的 Pytorch 环境
 
+在 Anaconda Prompt 中激活安装好的 Pytorch 环境然后输入 : `pip install -r requirements.txt`
 
+等待安装完成
+
+安装完成后 :
+
+1. 运行 detect.py 看看能否正常运行，可以的话看下一步
+2. 将 train.py 中的参数 workers 改为 0，然后运行 train.py 看看能否正常运行
 
 
 ### 3. 数据获取
@@ -73,11 +73,19 @@ LGhub：https://www.anaconda.com/
 
 ### 6. 评估效果
 
+识别准确率
+
+识别速度
+
 ### 7. 迭代升级
 
-### 8. 送入鼠标操作
+循环训练，增加精度
 
-根据检测结果，计算坐标，然后根据坐标让鼠标移动到指定位置(开枪)
+### 8. 送入操作
+
+根据检测结果，计算坐标，然后根据坐标送入键鼠操作
+
+
 
 
 
