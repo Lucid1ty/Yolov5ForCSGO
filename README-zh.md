@@ -114,11 +114,43 @@
 * W : 创建区块
 * Ctrl + E : 编辑区块
 
-一个个打标
+一个个打标，打完标之后在标签文件夹中就会有一些对应的数据
 
 ### 5. 训练模型
 
+将 data 目录下的 coco128.yaml 复制一份，然后重命名为 CSGO.yaml
+
+打开 CSGO.yaml ，更改其中的内容如下 :
+
+```yaml
+path: datasets/CSGOData  # dataset root dir
+train: Pictures  # train images (relative to 'path')
+val: Labels  # val images (relative to 'path') 
+test:  # test images (optional)
+# Classes
+nc: 2  # number of classes
+names: ['head', 'body']  # class names
+```
+
+同时将 train.py 中参数 data 那行的代码 :
+
+```python
+parser.add_argument('--data', type=str, default=ROOT / 'data/coco128.yaml', help='dataset.yaml path')
+```
+
+更改成如下的样子 :
+
+```python
+parser.add_argument('--data', type=str, default=ROOT / 'data/CSGO.yaml', help='dataset.yaml path')
+```
+
+
+
+
+
 处理好的数据放入 Yolov5 中训练，得到权重文件
+
+
 
 ### 6. 评估效果
 
