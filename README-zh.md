@@ -23,7 +23,7 @@
 
 ## 技术教程(从0开始自己编写代码实现)
 
-### 1.软件安装
+### 1. 软件安装
 
 Python : https://www.python.org/
 
@@ -35,7 +35,13 @@ VSCode : https://code.visualstudio.com/
 
 LGhub：https://www.anaconda.com/
 
-### 2.拉取Yolov5仓库代码
+#### 1.2 Pytorch教程
+
+参考这个视频教程 : https://www.bilibili.com/video/BV1hE411t7RN
+
+
+
+### 2. 拉取Yolov5仓库代码
 
 ### 3. 数据获取
 
@@ -43,19 +49,19 @@ LGhub：https://www.anaconda.com/
 
 利用 Python 代码截图 : https://github.com/Lucid1ty/Screenshot
 
-### 4.数据处理
+### 4. 数据处理
 
 数据标注：利用 [打标软件](https://github.com/tzutalin/labelImg) labellmg 给图片打标
 
-### 5.训练模型
+### 5. 训练模型
 
 处理好的数据放入 Yolov5 中训练，得到权重文件
 
-### 6.评估效果
+### 6. 评估效果
 
-### 7.迭代升级
+### 7. 迭代升级
 
-### 8.送入鼠标操作
+### 8. 送入鼠标操作
 
 根据检测结果，计算坐标，然后根据坐标让鼠标移动到指定位置(开枪)
 
