@@ -65,7 +65,56 @@
 
 ### 4. 数据处理
 
-数据标注：利用 [打标软件](https://github.com/tzutalin/labelImg) labellmg 给图片打标
+#### 4.1 下载 labellmg
+
+数据标注 : 利用打标软件 [labellmg](https://github.com/tzutalin/labelImg) 给图片打标
+
+按照其中的 README 准备好环境 :
+1. 打开 Anaconda Prompt
+2. 激活 Pytorch 环境
+3. 下载安装 [PyQt5](https://www.riverbankcomputing.com/software/pyqt/download) 和 [lxml](https://lxml.de/installation.html)
+	安装 PyQt5 : `pip install PyQt5`
+	安装 lxml : `conda install lxml`
+
+然后下载 labellmg，得到一个压缩包，解压即可
+
+进入到 labelImg-master\data 这个目录下
+
+将其中的 predefined_classes.txt 复制一份到当前目录
+
+然后将复制的副本重命名，并且修改其中的内容为 : head 和 body
+
+这个 head 和 body 就是要打标的属性，也就是 Yolov5 要识别的目标
+
+#### 4.2 使用 labellmg
+
+打开 Anaconda Prompt :
+1. 激活 Pytorch 环境
+2. 切换目录到 labellmg 下
+3. 执行命令 : `python .\labellmg.py`
+	如果出现这样的报错 : ModuleNotFoundError: No module named 'libs.resources'
+	解决办法 : 
+	Step 1 : 运行 : `pyrcc5 -o resources.py resources.qrc`
+	Step 2 : 将生成的 resources.py 复制到同级的 libs 目录下
+	再次执行 `python .\labellmg.py`即可
+
+然后会出现这样的界面 :
+
+点击**查看**，勾选自动保存模式、单一类别模型、显示类别
+
+点击**打开目录**，选择截图存放的文件夹
+
+点击**改变存放目录**，选择一个地方存放标签(Labels)
+
+还要注意看当前模式是否为 YOLO 模式(默认是 YOLO 模式)
+
+![image-20220626201110643](https://raw.githubusercontent.com/Lucid1ty/images/main/picture/image-20220626201110643.png)
+
+单击右键可以查看快捷键 :
+* W : 创建区块
+* Ctrl + E : 编辑区块
+
+一个个打标
 
 ### 5. 训练模型
 
