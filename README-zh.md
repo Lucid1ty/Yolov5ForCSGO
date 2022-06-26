@@ -80,9 +80,7 @@
 
 进入到 labelImg-master\data 这个目录下
 
-将其中的 predefined_classes.txt 复制一份到当前目录
-
-然后将复制的副本重命名，并且修改其中的内容为 : head 和 body
+打开 predefined_classes.txt ，并且修改其中的内容为 : head 和 body
 
 这个 head 和 body 就是要打标的属性，也就是 Yolov5 要识别的目标
 
