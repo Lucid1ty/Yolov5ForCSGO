@@ -39,29 +39,55 @@
 
 ### 2. 获取代码
 
+#### 2.1 下载代码
+
 进入 Yolov5 的仓库 : https://github.com/ultralytics/yolov5
 
-下载下来解压，然后放到合适的位置
+点击 Code，然后点击 Download ZIP
 
-用 Pycharm 打开整个 Yolov5 的文件夹
+下载完成后解压出来，默认的文件名是：yolov5-master
 
-为此项目设置 Python 解释器，选择刚刚利用 Anaconda Prompt 安装好的 Pytorch 环境
+将 yolov5-master 复制到合适的位置
 
-在 Anaconda Prompt 中激活安装好的 Pytorch 环境然后输入 : `pip install -r requirements.txt`
+#### 2.2 安装依赖环境
+
+安装 yolov5 的依赖环境
+
+在 Anaconda Prompt 中切换目录到 yolov5-master 下，激活 pytorch3.8 环境然后输入 : `pip install -r requirements.txt`
 
 等待安装完成
 
-安装完成后 :
+#### 2.3 运行代码
 
-1. 运行 detect.py 看看能否正常运行，可以的话看下一步
-2. 将 train.py 中的参数 workers 改为 0，然后运行 train.py 看看能否正常运行
+用 Pycharm 打开整个 yolov5-master 文件夹
+
+为此项目设置 Python 解释器，选择在之前搭建好的 pytorch3.8 环境
+
+然后运行 detect.py 看看能否正确运行，正确的运行结果是在 runs\detect\exp 目录下有 2 张这样的图片 :
+
+![image-20220627010140081](https://raw.githubusercontent.com/Lucid1ty/images/main/picture/image-20220627010140081.png)
+
+![image-20220627010207063](https://raw.githubusercontent.com/Lucid1ty/images/main/picture/image-20220627010207063.png)
+
+正确运行 detect.py 之后接着运行 train.py :
+	将 train.py 中的参数 workers 改为 0，然后运行 train.py 看看能否正确运行
+
+正确运行的结果是 : 最开始会下载一个名叫 coco128 的数据集，然后开始一轮一轮的训练 :
+
+![image-20220627010711299](https://raw.githubusercontent.com/Lucid1ty/images/main/picture/image-20220627010711299.png)
+
+如果像上图这样就说明正确运行了，训练会花费很长时间，你可以将它终止运行，这不会有任何影响
 
 
 ### 3. 数据获取
 
-**在游戏中截取人物图片**
+#### 3.1 在游戏中截取人物图片
 
 利用 Python 代码截图 : https://github.com/Lucid1ty/Screenshot
+
+截图放在 Picture 下
+
+同时创建一个同级的 Labels 文件夹用于后续存放标签文件
 
 ### 4. 数据处理
 
@@ -69,86 +95,115 @@
 
 数据标注 : 利用打标软件 [labellmg](https://github.com/tzutalin/labelImg) 给图片打标
 
-按照其中的 README 准备好环境 :
-1. 打开 Anaconda Prompt
-2. 激活 Pytorch 环境
-3. 下载安装 [PyQt5](https://www.riverbankcomputing.com/software/pyqt/download) 和 [lxml](https://lxml.de/installation.html)
-	安装 PyQt5 : `pip install PyQt5`
-	安装 lxml : `conda install lxml`
+首先安装依赖环境 :
 
-然后下载 labellmg，得到一个压缩包，解压即可
+1. 打开 Anaconda Prompt
+2. 激活 pytorch3.8 环境
+3. 下载并安装 [PyQt5](https://www.riverbankcomputing.com/software/pyqt/download) 和 [lxml](https://lxml.de/installation.html)
+    安装 PyQt5 : `pip install PyQt5`
+    安装 lxml : `conda install lxml`
+
+然后下载 [labellmg](https://github.com/tzutalin/labelImg) ，直接进入 [labellmg](https://github.com/tzutalin/labelImg) 的仓库，点击 Code，然后点击 Download ZIP 即可
+
+得到一个压缩包，解压它会得到一个名叫 labelImg-master 的文件夹
 
 进入到 labelImg-master\data 这个目录下
 
-打开 predefined_classes.txt ，并且修改其中的内容为 : head 和 body
+打开 predefined_classes.txt ，并且修改其中的内容为 : head
 
-这个 head 和 body 就是要打标的属性，也就是 Yolov5 要识别的目标
+这个 head 就是要打标的属性，也是 Yolov5 要识别的目标
 
 #### 4.2 使用 labellmg
 
 打开 Anaconda Prompt :
-1. 激活 Pytorch 环境
-2. 切换目录到 labellmg 下
+1. 激活 pytorch3.8 环境
+2. 切换目录到 labelImg-master 下
 3. 执行命令 : `python .\labellmg.py`
-	如果出现这样的报错 : ModuleNotFoundError: No module named 'libs.resources'
+	如果出现这样的**报错** : ModuleNotFoundError: No module named 'libs.resources'
 	解决办法 : 
 	Step 1 : 运行 : `pyrcc5 -o resources.py resources.qrc`
 	Step 2 : 将生成的 resources.py 复制到同级的 libs 目录下
 	再次执行 `python .\labellmg.py`即可
 
-然后会出现这样的界面 :
+正确运行后会出现这样的界面 :
 
-点击**查看**，勾选自动保存模式、单一类别模型、显示类别
+![image-20220626201110643](https://raw.githubusercontent.com/Lucid1ty/images/main/picture/image-20220626201110643.png)
 
-点击**打开目录**，选择截图存放的文件夹
-
-点击**改变存放目录**，选择一个地方存放标签(Labels)
+1. 点击**查看**，勾选自动保存模式、单一类别模型、显示类别
+2. 点击**打开目录**，选择截图存放的文件夹(Picture)
+3. 点击**改变存放目录**，选择标签存放的文件夹(Labels)
 
 还要注意看当前模式是否为 YOLO 模式(默认是 YOLO 模式)
 
-![image-20220626201110643](https://raw.githubusercontent.com/Lucid1ty/images/main/picture/image-20220626201110643.png)
+这时可以开始打标了
 
 单击右键可以查看快捷键 :
 * W : 创建区块
 * Ctrl + E : 编辑区块
 
-一个个打标，打完标之后在标签文件夹中就会有一些对应的数据
+打标完成之后在标签文件夹(Labels)中就会有一些 txt 文件，这些 txt 文件和图片是一一对应的
+
+所以完成打标后，**千万不要改图片和标签文件的文件名**
 
 ### 5. 训练模型
 
-将 data 目录下的 coco128.yaml 复制一份，然后重命名为 CSGO.yaml
+#### 5.1 存放已打标数据
 
-打开 CSGO.yaml ，更改其中的内容如下 :
+进入与 yolov5-master 同级的目录 datasets
+
+复制 datasets 中的 coco128 到当前目录，然后重命名为 CSGOData
+
+进入 CSGOData/images/train2017，然后删除其中的全部内容，此时将 Picture 中的全部内容粘贴至此
+
+进入 CSGOData/labels/train2017，然后删除其中的全部内容，此时将 Labels 中的全部内容粘贴至此
+
+#### 5.2 编写配置文件
+
+将 yolov5-master/data 目录下的 coco128.yaml 复制一份，然后重命名为 CSGO.yaml
+
+打开 CSGO.yaml ，删除其中的全部内容，然后粘贴如下内容进去 :
 
 ```yaml
-path: datasets/CSGOData  # dataset root dir
-train: Pictures  # train images (relative to 'path')
-val: Labels  # val images (relative to 'path') 
+path: ../datasets/CSGOData
+train: images/train2017
+val: images/train2017
 test:  # test images (optional)
 # Classes
-nc: 2  # number of classes
-names: ['head', 'body']  # class names
+nc: 1  # number of classes
+names: ['head']  # class names
 ```
 
-同时将 train.py 中参数 data 那行的代码 :
+将 train.py 中参数 --cfg 那行的代码 :
+
+```python
+    parser.add_argument('--cfg', type=str, default='', help='model.yaml path')
+```
+
+改成如下 : 
+
+```python
+    parser.add_argument('--cfg', type=str, default='yolov5s.yaml', help='model.yaml path')
+```
+
+将 train.py 中参数 --data 那行的代码 :
 
 ```python
 parser.add_argument('--data', type=str, default=ROOT / 'data/coco128.yaml', help='dataset.yaml path')
 ```
 
-更改成如下的样子 :
+改成如下 :
 
 ```python
 parser.add_argument('--data', type=str, default=ROOT / 'data/CSGO.yaml', help='dataset.yaml path')
 ```
 
+然后进入 models 文件夹下
 
+打开 yolov5s.yaml
 
+将其中的 nc 改为 1
 
-
-处理好的数据放入 Yolov5 中训练，得到权重文件
-
-
+然后运行 train.py，等待训练完成，得到权重文件
 
 ### 6. 评估效果
 
