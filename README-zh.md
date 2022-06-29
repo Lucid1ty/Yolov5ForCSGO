@@ -262,6 +262,21 @@ coming soon...
 
 #### 6.3 根据坐标控制鼠标移动⭐⭐⭐
 
+**方式一**
+
+1. 以管理员方式启动 Pycharm
+2. 调用 win32api
+3. CSGO 设置中关闭原生输入
+
+```python
+import win32api
+win32api.SetCursorPos((int(LEFT + btc[0]), int(TOP + btc[1])))
+```
+
+**方式二**
+
+
+
 ```python
 import random
 import time
@@ -283,7 +298,7 @@ pydirectinput.moveTo(int(LEFT + btc[0]), int(TOP + btc[1]))  # 还是没用！
 # print(int(LEFT + btc[0]))
 # print(int(TOP + btc[1]))
 # mouse.position = (int(LEFT + btc[0]), int(TOP + btc[1]))    # 在桌面可以用，但传不到游戏里
-# win32api.SetCursorPos((int(LEFT + btc[0]), int(TOP + btc[1])))  # 在桌面可以用，但传不到游戏里
+# win32api.SetCursorPos((int(LEFT + btc[0]), int(TOP + btc[1])))  # 可以用！
 # mouse.click(Button.left, 1)   # 鼠标点击
 
 # Read pointer position
