@@ -22,8 +22,10 @@ def lock(aims, mouse, x, y):
     tag = int(tag)
     x_center, width = x * float(x_center), x * float(width)
     y_center, height = y * float(y_center), x * float(height)
-    if tag == 0:    # 类型为头的时候,0 CT_HEAD 1 CT_BODY 2 T_HEAD 3 T_BODY
+    # 类型选择
+    if tag == 0:    # 类型为头的时候,0 head 1 body
         mouse.position = (x_center, y_center)
+
     # if tag == 0 or tag == 2:  # 类型为头的时候,0 CT_HEAD 1 CT_BODY 2 T_HEAD 3 T_BODY
     #     mouse.position = (x_center, y_center)
     # elif tag == 1 or tag == 3:
