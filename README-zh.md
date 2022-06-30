@@ -8,18 +8,22 @@
 
 1. 克隆本项目
 
-	git clone git@github.com : Lucid1ty/Yolov5ForCSGO.git
+    git clone git@github.com : Lucid1ty/Yolov5ForCSGO.git
 
 2. 切换到本项目的目录下
 
-	cd Yolov5ForCSGO
+    cd Yolov5ForCSGO
 
 3. 安装环境依赖
 
-	pip install -r requirements.txt
+    pip install -r requirements.txt
 	
 4. 使用
-	施工中...
+
+    * 如果你没有权重文件并且想直接用我给你提供的权重文件，那么直接运行 aim-csgo 目录下的 main.py 即可
+    * 如果你已经有了权重文件(类似于 xxx.pt)并且不想用我给你提供的权重文件，那么直接打开 aim-csgo/CSGOModels 这个目录，将自己的权重文件放进去，然后打开 aim-csgo/cs_model.py ，将第 13 行代码修改(改为你自己的权重文件路径)。然后运行 aim-csgo 目录下的 main.py 即可
+    * 如果你没有权重文件又不想用我提供的权重文件，那么请先训练自己的权重文件，然后参考上一条
+
 
 ## 技术教程
 
