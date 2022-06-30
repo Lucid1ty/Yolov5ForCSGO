@@ -20,7 +20,7 @@ def save_image(addr, image, num):
 
 
 # 视频文件目录
-video_path = './videos/xxx.mp4'    # 填入自己的视频文件名
+video_path = './videos/CSGO2.mkv'    # 将 CSGO2.mkv 替换为你自己的视频文件
 # 图片存放目录
 image_path = './images'
 # 是否取所有的帧，如果设置成True则截取视频中所有的帧，Flase则从第一帧截取到第 1000 帧
