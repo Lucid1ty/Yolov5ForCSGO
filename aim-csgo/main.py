@@ -21,7 +21,7 @@ device = 'cuda' if torch.cuda.is_available() else 'cpu'
 half = device != 'cpu'
 imgsz = 640
 
-conf_thres = 0.4
+conf_thres = 0.8    # 当可信度大于 0.8 时显示检测框
 iou_thres = 0.05
 
 x, y = (1920, 1080)
@@ -71,7 +71,7 @@ listener = pynput.mouse.Listener(
 listener.start()
 
 
-# 阻塞版本需要加一行缩进,同时注释掉下面的 While
+# 阻塞版本需要将下面的所有代码加一行缩进,同时注释掉下面这行 While 语句
 while True:
     img0 = grab_screen(region=(0, 0, x, y))
     img0 = cv2.resize(img0, (re_x, re_y))
@@ -112,7 +112,7 @@ while True:
 
         if len(aims):
             if lock_mode:
-                lock(aims, mouse, x, y)   # 鼠标瞄准函数
+                lock(aims, mouse, x, y)   # 瞄准目标
 
             for i, det in enumerate(aims):
                 _, x_center, y_center, width, height = det
@@ -124,7 +124,6 @@ while True:
                 cv2.rectangle(img0, top_left, bottom_right, color, thickness=3)
 
 
-# 下面的别动
     cv2.namedWindow('csgo-detect', cv2.WINDOW_NORMAL)
     cv2.resizeWindow('csgo-detect', re_x // 3, re_y // 3)
     cv2.imshow('csgo-detect', img0)
