@@ -1,4 +1,4 @@
-path: ./datasets/CSGOData  # dataset root dir
+path: ../labelimg # dataset root dir
 train: images  # 训练集
 val: images  # 验证集
 
