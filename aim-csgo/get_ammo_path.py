@@ -3,6 +3,9 @@
 # @Author : Cosmica
 # @File : get_ammo_path
 # @Project : yolov5-master
+
+
+# 未完成
 import csv
 
 f = csv.reader(open('./ammo_path/ak47.csv', encoding='utf-8'))

@@ -3,6 +3,7 @@
 # @Author : Cosmica
 # @File : main
 # @Project : LearnYolov5
+
 import numpy as np
 from grabscreen import grab_screen
 from cs_model import load_model
