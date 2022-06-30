@@ -24,6 +24,7 @@ imgsz = 640
 conf_thres = 0.8    # 当可信度大于 0.8 时显示检测框
 iou_thres = 0.05
 
+# 屏幕分辨率
 x, y = (1920, 1080)
 re_x, re_y = (1920, 1080)
 
@@ -54,7 +55,7 @@ def on_move(x, y):
 
 def on_click(x, y, button, pressed):
     global lock_mode
-    if pressed and button == button.x2:   # 鼠标上侧键
+    if pressed and button == button.x2:   # 鼠标侧键(上侧键)
         lock_mode = not lock_mode
         print('lock mode', 'no' if lock_mode else 'off')
 

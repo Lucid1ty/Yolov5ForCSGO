@@ -10,7 +10,7 @@ from models.experimental import attempt_load
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 half = device != 'cpu'
 
-weights = './CSGOModels/326_head_body.pt'
+weights = './CSGOModels/326_head_body.pt'   # 填写你自己的权重文件，或者用我的就行
 imgsz = 640
 
 
