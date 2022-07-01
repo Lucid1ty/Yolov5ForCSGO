@@ -39,7 +39,7 @@
 
 4. Pytorch : [Pytorch 安装教程](https://github.com/Lucid1ty/Yolov5ForCSGO/blob/main/InstallationTutorial/zh/Pytorch.md)
 
-5. LGhub：https://www.anaconda.com/
+5. LGhub：
 
 ### 2. 部署 Yolov5
 
