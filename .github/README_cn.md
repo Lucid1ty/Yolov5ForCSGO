@@ -214,7 +214,7 @@ parser.add_argument('--data', type=str, default=ROOT / 'data/CSGO.yaml', help='d
 
 打开 yolov5s.yaml
 
-将其中的 nc 改为 1
+将其中的 nc 改为 2
 
 然后运行 train.py，等待训练完成
 
@@ -224,31 +224,9 @@ parser.add_argument('--data', type=str, default=ROOT / 'data/CSGO.yaml', help='d
 
 #### 6.1 截取屏幕并送入检测
 
-**截取屏幕**
+**截屏**
 
-```python
-import pyautogui
-import numpy as np
 
-SCREEN_W = 1920  # 屏幕长
-SCREEN_H = 1080  # 屏幕高
-SCREEN_CX = SCREEN_W // 2  # 屏幕中心x
-SCREEN_CY = SCREEN_H // 2  # 屏幕中心y
-SCREEN_C = [SCREEN_CX, SCREEN_CY]  # 屏幕中心坐标
-SCREENSHOT_W = 640  # 截图区域长
-SCREENSHOT_H = 640  # 截图区域高
-LEFT = SCREEN_CX - SCREENSHOT_W // 2  # 检测框左上角x
-TOP = SCREEN_CY - SCREENSHOT_H // 2  # 检测框左上角y
-print(LEFT)  # 640
-print(TOP)  # 220
-print(SCREENSHOT_W)  # 640
-print(SCREENSHOT_H)  # 640
-
-# img = pyautogui.screenshot('1.png')  # 截取整个屏幕并且保存为 1.png
-img1 = pyautogui.screenshot('2.png', region=(640, 220, 640, 640))  # 截取屏幕中央 640*640 的图片
-print(img1)  # <PIL.Image.Image image mode=RGB size=1920x1080 at 0x21FCDFA8130>
-print(np.array(img1))   # 将图片处理为数组
-```
 
 **送入检测**
 
