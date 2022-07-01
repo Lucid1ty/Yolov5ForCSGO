@@ -4,6 +4,14 @@
 <div align="center">
 
 [English](../README.md) | 简体中文
+
+
+![GitHub Repo stars](https://img.shields.io/github/stars/Lucid1ty/Yolov5ForCSGO?style=social)
+![GitHub issues](https://img.shields.io/github/issues/Lucid1ty/Yolov5ForCSGO)
+![GitHub forks](https://img.shields.io/github/forks/Lucid1ty/Yolov5ForCSGO?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/Lucid1ty/Yolov5ForCSGO?style=social)
+
+
 <br>
 
 <div>
