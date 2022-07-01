@@ -4,6 +4,7 @@ English | [简体中文](https://github.com/Lucid1ty/Yolov5ForCSGO/blob/main/.gi
    
    
 ![GitHub Repo stars](https://img.shields.io/github/stars/Lucid1ty/Yolov5ForCSGO?style=social)
+![GitHub issues](https://img.shields.io/github/issues/Lucid1ty/Yolov5ForCSGO)
    
    
 <br>
