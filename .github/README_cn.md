@@ -79,7 +79,7 @@ pip install -r requirements.txt  # 安装
 
 ## <div align="center">贡献</div>
 
-我们重视您的意见! 我们希望给大家提供尽可能的简单和透明的方式对 Yolov5ForCSGO 做出贡献。开始之前请先点击并查看我们的 [贡献指南](CONTRIBUTING.md)
+我们重视您的意见! 我们希望给大家提供尽可能的简单和透明的方式对 Yolov5ForCSGO 做出贡献。开始之前请先点击并查看我们的 [贡献指南](../CONTRIBUTING.md)
 
 
 
