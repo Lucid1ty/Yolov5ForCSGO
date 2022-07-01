@@ -53,9 +53,12 @@ pip install -r requirements.txt  # install
 
 <details open>
 <summary>Use</summary>
-<ul>* If you don't have a weight file and want to directly use the weight file I provide you, just run main.py under the aim-csgo directory</ul>
-<ul>* If you already have a weight file (similar to xxx.pt) and don't want to use the weight file I provide you, open the directory aim-csgo/CSGOModels,put your own weight file in it, and then open csgo/cs_model.py, modify the code in line 13 (change it to your own weight file path). Then run main.py </ul>
-<ul>* If you don't have a weight file and don't want to use the weight file provided by me, please train your own weight file first, and then refer to the previous one</ul>
+<ul>
+<li>If you don't have a weight file and want to directly use the weight file I provide you, just run main.py under the aim-csgo directory</li>
+<li>If you already have a weight file (similar to xxx.pt) and don't want to use the weight file I provide you, open the directory aim-csgo/CSGOModels,put your own weight file in it, and then open csgo/cs_model.py, modify the code in line 13 (change it to your own weight file path). Then run main.py</li>
+<li>If you don't have a weight file and don't want to use the weight file provided by me, please train your own weight file first, and then refer to the previous one</li>
+</ul>
+
 
 </details>
 
@@ -63,8 +66,6 @@ pip install -r requirements.txt  # install
 ## <div align="center">Contribute</div>
 
 Please see [Contributing Guide](CONTRIBUTING.md) to get started,Thank you to all our contributors!
-
-
 
 
 
