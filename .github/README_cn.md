@@ -8,7 +8,7 @@
 
 1. 克隆本项目
 
-    git clone git@github.com : Lucid1ty/Yolov5ForCSGO.git
+    git clone https://github.com/Lucid1ty/Yolov5ForCSGO.git
 
 2. 切换到本项目的目录下
 
