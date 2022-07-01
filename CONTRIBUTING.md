@@ -1,6 +1,6 @@
-## Contributing to YOLOv5 🚀
+## Contributing to Yolov5ForCSGO 🚀
 
-We love your input! We want to make contributing to YOLOv5 as easy and transparent as possible, whether it's:
+We love your input! We want to make contributing to Yolov5ForCSGO as easy and transparent as possible, whether it's:
 
 - Reporting a bug
 - Discussing the current state of the code
@@ -8,7 +8,7 @@ We love your input! We want to make contributing to YOLOv5 as easy and transpare
 - Proposing a new feature
 - Becoming a maintainer
 
-YOLOv5 works so well due to our combined community effort, and for every small improvement you contribute you will be
+Yolov5ForCSGO works so well due to our combined community effort, and for every small improvement you contribute you will be
 helping push the frontiers of what's possible in AI 😃!
 
 ## Submitting a Pull Request (PR) 🛠️
