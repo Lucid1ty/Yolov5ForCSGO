@@ -19,39 +19,40 @@ Submitting a PR is easy! This example shows how to submit a PR for updating `req
 
 Select `requirements.txt` to update by clicking on it in GitHub.
 
-<p align="center"><img width="800" alt="PR_step1" src="https://user-images.githubusercontent.com/26833433/122260847-08be2600-ced4-11eb-828b-8287ace4136c.png"></p>
+
+<p align="center"><img width="800" alt="PR_step1" src="https://raw.githubusercontent.com/Lucid1ty/images/main/picture/image-20220701131715049.png"></p>
 
 ### 2. Click 'Edit this file'
 
 Button is in top-right corner.
 
-<p align="center"><img width="800" alt="PR_step2" src="https://user-images.githubusercontent.com/26833433/122260844-06f46280-ced4-11eb-9eec-b8a24be519ca.png"></p>
+
+<p align="center"><img width="800" alt="PR_step2" src="https://raw.githubusercontent.com/Lucid1ty/images/main/picture/image-20220701131920075.png"></p>
 
 ### 3. Make Changes
 
 Change `matplotlib` version from `3.2.2` to `3.3`.
 
-<p align="center"><img width="800" alt="PR_step3" src="https://user-images.githubusercontent.com/26833433/122260853-0a87e980-ced4-11eb-9fd2-3650fb6e0842.png"></p>
+
+<p align="center"><img width="800" alt="PR_step3" src="https://raw.githubusercontent.com/Lucid1ty/images/main/picture/image-20220701132117945.png"></p>
 
 ### 4. Preview Changes and Submit PR
 
 Click on the **Preview changes** tab to verify your updates. At the bottom of the screen select 'Create a **new branch**
 for this commit', assign your branch a descriptive name such as `fix/matplotlib_version` and click the green **Propose
-changes** button. All done, your PR is now submitted to YOLOv5 for review and approval 😃!
+changes** button. All done, your PR is now submitted to Yolov5ForCSGO for review and approval 😃!
 
-<p align="center"><img width="800" alt="PR_step4" src="https://user-images.githubusercontent.com/26833433/122260856-0b208000-ced4-11eb-8e8e-77b6151cbcc3.png"></p>
+
+<p align="center"><img width="800" alt="PR_step4" src="https://raw.githubusercontent.com/Lucid1ty/images/main/picture/image-20220701132429820.png"></p>
 
 ### PR recommendations
 
 To allow your work to be integrated as seamlessly as possible, we advise you to:
 
-- ✅ Verify your PR is **up-to-date with upstream/master.** If your PR is behind upstream/master an
-  automatic [GitHub Actions](https://github.com/ultralytics/yolov5/blob/master/.github/workflows/rebase.yml) merge may
-  be attempted by writing /rebase in a new comment, or by running the following code, replacing 'feature' with the name
-  of your local branch:
+- ✅ Verify your PR is **up-to-date with upstream/master.** If your PR is behind upstream/master an automatic [GitHub Actions](https://github.com/ultralytics/yolov5/blob/master/.github/workflows/rebase.yml) merge may be attempted by writing /rebase in a new comment, or by running the following code, replacing 'feature' with the name of your local branch:
 
 ```bash
-git remote add upstream https://github.com/ultralytics/yolov5.git
+git remote add upstream https://github.com/Lucid1ty/Yolov5ForCSGO.git
 git fetch upstream
 # git checkout feature  # <--- replace 'feature' with local branch name
 git merge upstream/master
