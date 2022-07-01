@@ -1,7 +1,11 @@
 <div align="center">
 
 English | [简体中文](https://github.com/Lucid1ty/Yolov5ForCSGO/blob/main/.github/README_cn.md)
+   
+   
 ![GitHub Repo stars](https://img.shields.io/github/stars/Lucid1ty/Yolov5ForCSGO?style=social)
+   
+   
 <br>
 
 <div>
