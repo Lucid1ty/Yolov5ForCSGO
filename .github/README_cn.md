@@ -262,13 +262,13 @@ names: ['head']  # class names
 打开 train.py，将 train.py 中参数 --cfg 那行的代码 :
 
 ```python
-    parser.add_argument('--cfg', type=str, default='', help='model.yaml path')
+parser.add_argument('--cfg', type=str, default='', help='model.yaml path')
 ```
 
 改成如下 : 
 
 ```python
-    parser.add_argument('--cfg', type=str, default='yolov5s.yaml', help='model.yaml path')
+parser.add_argument('--cfg', type=str, default='yolov5s.yaml', help='model.yaml path')
 ```
 
 将 train.py 中参数 --data 那行的代码 :
