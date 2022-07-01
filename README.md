@@ -62,9 +62,11 @@ pip install -r requirements.txt  # install
 
 ## <div align="center">Contribute</div>
 
-We love your input! We want to make contributing to YOLOv5 as easy and transparent as possible. Please see our [Contributing Guide](CONTRIBUTING.md) to get started, and fill out the [YOLOv5 Survey](https://ultralytics.com/survey?utm_source=github&utm_medium=social&utm_campaign=Survey) to send us feedback on your experiences. Thank you to all our contributors!
+Please see [Contributing Guide](CONTRIBUTING.md) to get started,Thank you to all our contributors!
 
-<a href="https://github.com/ultralytics/yolov5/graphs/contributors"><img src="https://opencollective.com/ultralytics/contributors.svg?width=990" /></a>
+
+
+
 
 ## <div align="center">Contact</div>
 
