@@ -85,7 +85,7 @@ pip install -r requirements.txt  # 安装
 
 ## <div align="center">联系</div>
 
-关于YOLOv5的漏洞和功能问题，请访问 [GitHub Issues](https://github.com/Lucid1ty/Yolov5ForCSGO/issues)。
+关于 Yolov5ForCSGO 的漏洞和功能问题，请访问 [GitHub Issues](https://github.com/Lucid1ty/Yolov5ForCSGO/issues)。
 
 <br>
 
