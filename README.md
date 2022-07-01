@@ -8,7 +8,7 @@ English | [简体中文](https://github.com/Lucid1ty/Yolov5ForCSGO/blob/main/.gi
 
 <br>
 <p>
-   This project uses <a href="https://github.com/ultralytics/yolov5">YOLOv5</a> to realize character detection in CSGO games
+   This project uses <a href="https://github.com/ultralytics/yolov5">YOLOv5</a> to realize character detection in CSGO games and auto aim
 
 YOLOv5 🚀 is a family of object detection architectures and models pretrained on the COCO dataset, and represents <a href="https://ultralytics.com">Ultralytics</a>
  open-source research into future vision AI methods, incorporating lessons learned and best practices evolved over thousands of hours of research and development.
