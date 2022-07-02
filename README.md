@@ -75,7 +75,6 @@ Please see [Contributing Guide](CONTRIBUTING.md) to get started,Thank you to all
 
 For Yolov5ForCSGO bugs and feature requests please visit [GitHub Issues](https://github.com/Lucid1ty/Yolov5ForCSGO/issues).
 
-<br>
 
 <div align="center">
     <a href="https://github.com/Lucid1ty">
