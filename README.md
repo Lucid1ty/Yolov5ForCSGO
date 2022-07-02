@@ -6,14 +6,11 @@ English | [简体中文](https://github.com/Lucid1ty/Yolov5ForCSGO/blob/main/.gi
 ![GitHub issues](https://img.shields.io/github/issues/Lucid1ty/Yolov5ForCSGO)
 ![GitHub forks](https://img.shields.io/github/forks/Lucid1ty/Yolov5ForCSGO?style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/Lucid1ty/Yolov5ForCSGO?style=social)
-
-
-<br>
-
 <div>
+
 </div>
 
-<br>
+
 <p>
    This project uses <a href="https://github.com/ultralytics/yolov5">YOLOv5</a> to realize character detection in CSGO games and auto aim
 
@@ -30,10 +27,6 @@ YOLOv5 🚀 is a family of object detection architectures and models pretrained 
    </a>
 </div>
 
-<!--
-<a align="center" href="https://ultralytics.com/yolov5" target="_blank">
-<img width="800" src="https://github.com/ultralytics/yolov5/releases/download/v1.0/banner-api.png"></a>
--->
 
 </div>
 
