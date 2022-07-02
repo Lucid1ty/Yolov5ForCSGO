@@ -12,7 +12,6 @@
 <div>
 
 
-
 </div>
 <p>
     本项目利用 <a href="https://github.com/ultralytics/yolov5">YOLOv5</a> 实现 CSGO 游戏中的人物检测和自动瞄准
@@ -86,12 +85,10 @@ pip install -r requirements.txt  # 安装
 我们重视您的意见! 我们希望给大家提供尽可能的简单和透明的方式对 Yolov5ForCSGO 做出贡献。开始之前请先点击并查看我们的 [贡献指南](../CONTRIBUTING.md)
 
 
-
 ## <div align="center">联系</div>
 
 关于 Yolov5ForCSGO 的漏洞和功能问题，请访问 [GitHub Issues](https://github.com/Lucid1ty/Yolov5ForCSGO/issues)。
 
-<br>
 
 <div align="center">
     <a href="https://github.com/Lucid1ty">
