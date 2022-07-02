@@ -1,7 +1,6 @@
-# Yolov5ForCSGO
-
-
 <div align="center">
+
+# Yolov5ForCSGO
 
 [English](../README.md) | 简体中文
 
@@ -10,14 +9,11 @@
 ![GitHub issues](https://img.shields.io/github/issues/Lucid1ty/Yolov5ForCSGO)
 ![GitHub forks](https://img.shields.io/github/forks/Lucid1ty/Yolov5ForCSGO?style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/Lucid1ty/Yolov5ForCSGO?style=social)
-
-
-<br>
-
 <div>
-</div>
-<br>
 
+
+
+</div>
 <p>
     本项目利用 <a href="https://github.com/ultralytics/yolov5">YOLOv5</a> 实现 CSGO 游戏中的人物检测和自动瞄准
 
