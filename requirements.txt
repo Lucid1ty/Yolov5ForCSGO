@@ -39,4 +39,4 @@ thop  # FLOPs computation
 # pycocotools>=2.0  # COCO mAP
 # roboflow
 pynput
-pywin32>=304
+pywin32>=302
