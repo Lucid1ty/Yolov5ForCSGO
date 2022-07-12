@@ -2,7 +2,7 @@
 # @Time : 2022/6/28 23:17
 # @Author : Cosmica
 # @File : videoToImg：解析视频并截图保存在新的文件夹下
-# @Project : LearnYolov5
+# @Project : Yolov5ForCSGO
 import cv2
 
 
