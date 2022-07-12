@@ -2,7 +2,7 @@
 # @Time : 2022/6/29 19:25
 # @Author : Cosmica
 # @File : cs_model
-# @Project : LearnYolov5
+# @Project : Yolov5ForCSGO
 
 import torch
 from models.experimental import attempt_load
