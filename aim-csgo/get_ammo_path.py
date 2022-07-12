@@ -2,7 +2,7 @@
 # @Time : 2022/6/30 14:13
 # @Author : Cosmica
 # @File : get_ammo_path
-# @Project : yolov5-master
+# @Project : Yolov5ForCSGO
 
 
 # 未完成

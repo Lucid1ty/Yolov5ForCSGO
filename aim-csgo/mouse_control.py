@@ -2,7 +2,7 @@
 # @Time : 2022/6/30 0:03
 # @Author : Cosmica
 # @File : mouse_control
-# @Project : yolov5-master
+# @Project : Yolov5ForCSGO
 import pynput
 
 

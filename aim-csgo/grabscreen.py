@@ -2,7 +2,7 @@
 # @Time : 2022/6/29 18:53
 # @Author : Cosmica
 # @File : grabscreen
-# @Project : LearnYolov5
+# @Project : Yolov5ForCSGO
 import cv2
 import numpy as np
 import win32gui
