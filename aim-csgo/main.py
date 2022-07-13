@@ -113,7 +113,7 @@ while True:
 
         if len(aims):
             if lock_mode:
-                lock(aims, mouse, x, y)   # 瞄准目标
+                lock(aims, mouse, x, y)   # Aim at the target
 
             for i, det in enumerate(aims):
                 _, x_center, y_center, width, height = det
@@ -121,7 +121,7 @@ while True:
                 y_center, height = re_y * float(y_center), re_y * float(height)
                 top_left = (int(x_center - width / 2.), int(y_center - height / 2.))
                 bottom_right = (int(x_center + width / 2.)), (int(y_center + height / 2.))
-                color = (0, 255, 0)    # 用绿色显示框框
+                color = (0, 255, 0)    # Show targets with green boxes
                 cv2.rectangle(img0, top_left, bottom_right, color, thickness=3)
 
 
