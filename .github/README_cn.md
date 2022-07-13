@@ -101,15 +101,16 @@ pip install -r requirements.txt  # 安装
 
 ## 技术教程(未完成)
 
-### 1. 软件安装和环境搭建
+### 1. 下载并安装必要的软件
 
-按照顺序安装即可
+按照顺序下载安装即可
 
 1. Anaconda : [Anaconda 安装教程](https://github.com/Lucid1ty/Yolov5ForCSGO/blob/main/InstallationTutorial/zh/Anaconda.md)
 
-2. Pycharm : [Pycharm 安装教程](https://zhuanlan.zhihu.com/p/529688095)
+2. Pytorch : [Pytorch 安装教程](https://github.com/Lucid1ty/Yolov5ForCSGO/blob/main/InstallationTutorial/zh/Pytorch.md)
 
-3. Pytorch : [Pytorch 安装教程](https://github.com/Lucid1ty/Yolov5ForCSGO/blob/main/InstallationTutorial/zh/Pytorch.md)
+3. Pycharm : [Pycharm 安装教程](https://zhuanlan.zhihu.com/p/529688095)
+
 
 ### 2. 部署 Yolov5
 
