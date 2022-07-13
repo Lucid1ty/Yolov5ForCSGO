@@ -41,4 +41,4 @@ thop>=0.1.0  # FLOPs computation
 # pycocotools>=2.0  # COCO mAP
 # roboflow
 pynput
-pywin32
+pywin32 # Needs to be installed correctly,see more in :
