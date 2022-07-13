@@ -3,7 +3,6 @@
 # @Author : Cosmica
 # @File : mouse_control
 # @Project : Yolov5ForCSGO
-import pynput
 
 
 def lock(aims, mouse, x, y):
