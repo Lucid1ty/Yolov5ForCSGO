@@ -23,14 +23,3 @@ def load_model():
         model(torch.zeros(1, 3, imgsz, imgsz).to(device).type_as(next(model.parameters())))
 
     return model
-
-
-
-
-
-
-
-
-
-
-

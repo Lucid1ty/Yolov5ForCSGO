@@ -1,8 +1,9 @@
 # _*_ coding : utf-8 _*_
 # @Time : 2022/6/28 23:17
-# @Author : Cosmica
-# @File : videoToImg：解析视频并截图保存在新的文件夹下
+# @Author : Lucid1ty
+# @File : videoToImg
 # @Project : Yolov5ForCSGO
+
 import cv2
 
 
