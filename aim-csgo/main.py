@@ -3,7 +3,8 @@
 # @Author : Cosmica
 # @File : main
 # @Project : Yolov5ForCSGO
-# This is dev branch!!!
+
+
 import numpy as np
 from grabscreen import grab_screen
 from cs_model import load_model
