@@ -1,6 +1,6 @@
 # _*_ coding : utf-8 _*_
 # @Time : 2022/6/29 19:25
-# @Author : Cosmica
+# @Author : Lucid1ty
 # @File : cs_model
 # @Project : Yolov5ForCSGO
 
