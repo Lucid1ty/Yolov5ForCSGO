@@ -101,7 +101,7 @@ pip install -r requirements.txt  # 安装
 
 ## 技术教程(未完成)
 
-### 1. 软件安装
+### 1. 软件安装和环境搭建
 
 按照顺序安装即可
 
@@ -109,11 +109,7 @@ pip install -r requirements.txt  # 安装
 
 2. Pycharm : [Pycharm 安装教程](https://zhuanlan.zhihu.com/p/529688095)
 
-3. VSCode : https://code.visualstudio.com/
-
-4. Pytorch : [Pytorch 安装教程](https://github.com/Lucid1ty/Yolov5ForCSGO/blob/main/InstallationTutorial/zh/Pytorch.md)
-
-5. LGhub：
+3. Pytorch : [Pytorch 安装教程](https://github.com/Lucid1ty/Yolov5ForCSGO/blob/main/InstallationTutorial/zh/Pytorch.md)
 
 ### 2. 部署 Yolov5
 
