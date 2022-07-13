@@ -1,8 +1,9 @@
 # _*_ coding : utf-8 _*_
 # @Time : 2022/6/29 18:53
-# @Author : Cosmica
+# @Author : Lucid1ty
 # @File : grabscreen
 # @Project : Yolov5ForCSGO
+
 import cv2
 import numpy as np
 import win32gui

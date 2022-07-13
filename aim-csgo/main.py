@@ -1,9 +1,8 @@
 # _*_ coding : utf-8 _*_
 # @Time : 2022/6/29 19:02
-# @Author : Cosmica
+# @Author : Lucid1ty
 # @File : main
 # @Project : Yolov5ForCSGO
-
 
 import numpy as np
 from grabscreen import grab_screen
@@ -14,18 +13,19 @@ import win32con
 import torch
 from utils.general import non_max_suppression, scale_coords, xyxy2xywh
 from utils.augmentations import letterbox
-import pynput
+import pynput   # Mouse control
 from mouse_control import lock
 
 
+# Select GPU or CPU
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 half = device != 'cpu'
 imgsz = 640
 
-conf_thres = 0.8    # 当可信度大于 0.8 时显示检测框
-iou_thres = 0.05
+conf_thres = 0.8    # Confidence
+iou_thres = 0.05    # NMS IoU threshold
 
-# 屏幕分辨率
+# Screen resolution
 x, y = (1920, 1080)
 re_x, re_y = (1920, 1080)
 
@@ -33,12 +33,12 @@ model = load_model()
 stride = int(model.stride.max())
 names = model.module.names if hasattr(model, 'module') else model.names
 
-lock_mode = False
+lock_mode = False   # Auto aim mode,use mouse side button(mouse button 5) to open
 
 mouse = pynput.mouse.Controller()
 
 
-# 鼠标监听功能(非阻塞版本)
+# Mouse listening function(Non-blocking version)
 # with pynput.mouse.Events() as events:
 #     while True:
 #         it = next(events)
@@ -49,14 +49,14 @@ mouse = pynput.mouse.Controller()
 #             print('lock mode', 'no' if lock_mode else 'off')
 
 
-# 鼠标监听功能(阻塞版本，2个线程容易冲突)
+# Mouse listening function(blocking version)
 def on_move(x, y):
     pass
 
 
 def on_click(x, y, button, pressed):
     global lock_mode
-    if pressed and button == button.x2:   # 鼠标侧键(上侧键)
+    if pressed and button == button.x2:   # mouse button 5
         lock_mode = not lock_mode
         print('lock mode', 'no' if lock_mode else 'off')
 
@@ -65,7 +65,6 @@ def on_scroll(x, y, dx, dy):
     pass
 
 
-# ...or, in a non-blocking fashion:
 listener = pynput.mouse.Listener(
     on_move=on_move,
     on_click=on_click,
@@ -73,7 +72,7 @@ listener = pynput.mouse.Listener(
 listener.start()
 
 
-# 阻塞版本需要将下面的所有代码加一行缩进,同时注释掉下面这行 While 语句
+# If you use the blocking version, you need to indent all of the following code and comment out the following While statement
 while True:
     img0 = grab_screen(region=(0, 0, x, y))
     img0 = cv2.resize(img0, (re_x, re_y))
@@ -114,7 +113,7 @@ while True:
 
         if len(aims):
             if lock_mode:
-                lock(aims, mouse, x, y)   # 瞄准目标
+                lock(aims, mouse, x, y)   # Aim at the target
 
             for i, det in enumerate(aims):
                 _, x_center, y_center, width, height = det
@@ -122,7 +121,7 @@ while True:
                 y_center, height = re_y * float(y_center), re_y * float(height)
                 top_left = (int(x_center - width / 2.), int(y_center - height / 2.))
                 bottom_right = (int(x_center + width / 2.)), (int(y_center + height / 2.))
-                color = (0, 255, 0)    # 用绿色显示框框
+                color = (0, 255, 0)    # Show targets with green boxes
                 cv2.rectangle(img0, top_left, bottom_right, color, thickness=3)
 
 
@@ -134,7 +133,7 @@ while True:
     CVRETC = cv2.getWindowImageRect('csgo-detect')
     win32gui.SetWindowPos(hwnd, win32con.HWND_TOPMOST, 0, 0, 0, 0, win32con.SWP_NOMOVE | win32con.SWP_NOSIZE)
 
-    # 按 q 结束运行
+    # Press q to end the program
     if cv2.waitKey(1) & 0xFF == ord('q'):
         cv2.destroyAllWindows()
         break
