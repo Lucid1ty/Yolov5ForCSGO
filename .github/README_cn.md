@@ -20,9 +20,6 @@ YOLOv5🚀是一个在COCO数据集上预训练的物体检测架构和模型系
 </p>
 
 <div align="center">
-   <a href="https://github.com/Lucid1ty">
-   <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-social-github.png" width="2%"/>
-   </a>
    <a href="https://www.oscs1024.com/project/oscs/Lucid1ty/Yolov5ForCSGO?ref=badge_small" alt="OSCS Status">
    <img src="https://www.oscs1024.com/platform/badge/Lucid1ty/Yolov5ForCSGO.svg?size=small"/>
    </a>
