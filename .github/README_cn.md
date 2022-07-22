@@ -38,7 +38,7 @@ YOLOv5🚀是一个在COCO数据集上预训练的物体检测架构和模型系
 
 下载本仓库，然后确保在[**Python>=3.7.0**](https://www.python.org/) 的环境中使用并安装 [requirements.txt](https://github.com/Lucid1ty/Yolov5ForCSGO/blob/main/requirements.txt)，包括[**PyTorch>=1.7**](https://pytorch.org/get-started/locally/)。
 ```bash
-pip install -r requirements.txt  # 安装
+pip install -r requirements.txt
 ```
 
 </details>
