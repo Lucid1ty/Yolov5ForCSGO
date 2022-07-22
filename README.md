@@ -43,7 +43,7 @@ Download repo and install [requirements.txt](https://github.com/Lucid1ty/Yolov5F
 [**PyTorch>=1.7**](https://pytorch.org/get-started/locally/).
 
 ```bash
-pip install -r requirements.txt  # install
+pip install -r requirements.txt
 ```
 
 </details>
