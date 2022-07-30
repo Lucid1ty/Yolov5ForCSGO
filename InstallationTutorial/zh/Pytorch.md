@@ -30,7 +30,7 @@
 
     回到 Anaconda Prompt 中 : 确保任然在 pytorch 环境中，把指令粘贴进去，回车执行等待安装完成即可
 
-这时，我们已经在创建的环境(pytorch)中安装好了 Pytorch
+    这时，我们已经在创建的环境(pytorch)中安装好了 Pytorch
 
 3. 检验安装是否正确
 	1. 确保任然在 pytorch 环境中
