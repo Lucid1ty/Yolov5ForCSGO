@@ -53,7 +53,7 @@ pip install -r requirements.txt
 <ul>
 <li>Please use administrator privileges to open you Pycharm(or other IDE),and change you CSGO settings : mouse input -> raw input</li>
 <li>If you don't have a weight file and want to directly use the weight file I provide you, just run main.py under the aim-csgo directory</li>
-<li>If you already have a weight file (similar to xxx.pt) and don't want to use the weight file I provide you, open the directory aim-csgo/CSGOModels, put your own weight file in it, and then open csgo/cs_model.py, modify the code in line 13 (change it to your own weight file path). Then run main.py</li>
+<li>If you already have a weight file (similar to xxx.pt) and don't want to use the weight file I provide you, open the directory aim-csgo/CSGOModels, put your own weight file in it, and then open aim-csgo/cs_model.py, modify the code in line 13 (change it to your own weight file path). Then run main.py</li>
 <li>If you don't have a weight file and don't want to use the weight file provided by me, please train your own weight file first, and then refer to the previous one</li>
 <li>After you run main.py, you will see a detection window, you can click mouse5 to open aim mode</li>
 <li>Close the program : click the detection window and press q</li>
