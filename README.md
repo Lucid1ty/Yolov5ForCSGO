@@ -29,7 +29,7 @@ YOLOv5 🚀 is a family of object detection architectures and models pretrained 
 
 </div>
 
-## <div align="center">Documentation</div>
+## <div align="center">YOLOv5 Documentation</div>
 
 See the [YOLOv5 Docs](https://docs.ultralytics.com) for full documentation on training, testing and deployment.
 
@@ -38,9 +38,7 @@ See the [YOLOv5 Docs](https://docs.ultralytics.com) for full documentation on tr
 <details open>
 <summary>Install</summary>
 
-Download repo and install [requirements.txt](https://github.com/Lucid1ty/Yolov5ForCSGO/blob/main/requirements.txt) in a
-[**Python>=3.7.0**](https://www.python.org/) environment, including
-[**PyTorch>=1.7**](https://pytorch.org/get-started/locally/).
+Download repo and install [requirements.txt](https://github.com/Lucid1ty/Yolov5ForCSGO/blob/main/requirements.txt) in a [**Python>=3.7.0**](https://www.python.org/) environment, including [**PyTorch>=1.7**](https://pytorch.org/get-started/locally/).
 
 ```bash
 pip install -r requirements.txt
@@ -61,12 +59,9 @@ pip install -r requirements.txt
 
 
 </details>
-
-
 ## <div align="center">Contribute</div>
 
 Please see [Contributing Guide](CONTRIBUTING.md) to get started,Thank you to all our contributors!
-
 
 
 ## <div align="center">Contact</div>
