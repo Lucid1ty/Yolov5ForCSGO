@@ -13,10 +13,12 @@
 
 
 </div>
+
 <p>
     本项目利用 <a href="https://github.com/ultralytics/yolov5">YOLOv5</a> 实现 CSGO 游戏中的人物检测和自动瞄准
-
 YOLOv5🚀是一个在COCO数据集上预训练的物体检测架构和模型系列，它代表了<a href="https://ultralytics.com">Ultralytics</a>对未来视觉AI方法的公开研究，其中包含了在数千小时的研究和开发中所获得的经验和最佳实践。
+TEST
+
 </p>
 
 <div align="center">
