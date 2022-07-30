@@ -14,23 +14,33 @@
     ⭐你最好和我取一样的名字，后面我一说激活 pytorch 环境你就知道是哪个环境了
     等待它创建完成
 	
-2. 激活刚刚创建的环境并执行安装
-    输入 : `conda activate pytorch`
-    激活这个环境后你应该看到最前面的名称是 : pytorch 而不是 base
-    然后我们进入 Pytorch 的官网 : https://pytorch.org/
-    点击红色框中的 Install :![image-20220626164616560](https://raw.githubusercontent.com/Lucid1ty/images/main/picture/image-20220626164616560.png)
-    在新的页面中往下找到这样的画面 :![image-20220626164757985](https://raw.githubusercontent.com/Lucid1ty/images/main/picture/image-20220626164757985.png)
-    按照自己的情况依次选择好 :
-
-    ![image-20220626164926081](https://raw.githubusercontent.com/Lucid1ty/images/main/picture/image-20220626164926081.png)
+   2. 激活刚刚创建的环境并执行安装
     
-    复制最后一行中给出的命令
+       输入 : `conda activate pytorch`
+
+       激活这个环境后你应该看到最前面的名称是 : pytorch 而不是 base
+
+       然后我们进入 Pytorch 的官网 : https://pytorch.org/
+
+       点击红色框中的 Install :
+   
+       ![image-20220626164616560](https://raw.githubusercontent.com/Lucid1ty/images/main/picture/image-20220626164616560.png)
+       
+       在新的页面中往下找到这样的画面 :
+   
+       ![image-20220626164757985](https://raw.githubusercontent.com/Lucid1ty/images/main/picture/image-20220626164757985.png)
+       
+       按照自己的情况依次选择好 :
+
+       ![image-20220626164926081](https://raw.githubusercontent.com/Lucid1ty/images/main/picture/image-20220626164926081.png)
     
-    我这里是 : `conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch`
+       复制最后一行中给出的命令
+    
+       我这里是 : `conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch`
 
-    回到 Anaconda Prompt 中 : 确保任然在 pytorch 环境中，把指令粘贴进去，回车执行等待安装完成即可
+       回到 Anaconda Prompt 中 : 确保任然在 pytorch 环境中，把指令粘贴进去，回车执行等待安装完成即可
 
-    这时，我们已经在创建的环境(pytorch)中安装好了 Pytorch
+       这时，我们已经在创建的环境(pytorch)中安装好了 Pytorch
 
 3. 检验安装是否正确
 	1. 确保任然在 pytorch 环境中
