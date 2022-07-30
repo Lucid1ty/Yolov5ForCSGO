@@ -56,7 +56,7 @@ pip install -r requirements.txt
 
 
 <details open>
-<summary>教程</summary>
+<summary>Yolov5教程</summary>
 
 - [训练自定义数据](https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data)  🚀 推荐
 - [获得最佳训练效果的技巧](https://github.com/ultralytics/yolov5/wiki/Tips-for-Best-Training-Results)  ☘️ 推荐
@@ -94,7 +94,7 @@ pip install -r requirements.txt
 [assets]: https://github.com/Lucid1ty/Yolov5ForCSGO/releases
 
 
-## 技术教程(未完成)
+## 本项目搭建教程(未完成)
 
 ### 1. 下载并安装必要的软件
 
