@@ -21,7 +21,9 @@
     点击红色框中的 Install :![image-20220626164616560](https://raw.githubusercontent.com/Lucid1ty/images/main/picture/image-20220626164616560.png)
     在新的页面中往下找到这样的画面 :![image-20220626164757985](https://raw.githubusercontent.com/Lucid1ty/images/main/picture/image-20220626164757985.png)
     按照自己的情况依次选择好 :
+
     ![image-20220626164926081](https://raw.githubusercontent.com/Lucid1ty/images/main/picture/image-20220626164926081.png)
+    
     复制最后一行中给出的命令
     我这里是 : `conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch`
     回到 Anaconda Prompt 中 :
