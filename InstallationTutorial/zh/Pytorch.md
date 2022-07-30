@@ -25,11 +25,10 @@
     ![image-20220626164926081](https://raw.githubusercontent.com/Lucid1ty/images/main/picture/image-20220626164926081.png)
     
     复制最后一行中给出的命令
+    
     我这里是 : `conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch`
-    回到 Anaconda Prompt 中 :
-    确保任然在 pytorch 环境中
-    把指令粘贴进去，回车执行
-    等待安装完成即可
+
+    回到 Anaconda Prompt 中 : 确保任然在 pytorch 环境中，把指令粘贴进去，回车执行等待安装完成即可
 
 这时，我们已经在创建的环境(pytorch)中安装好了 Pytorch
 
