@@ -27,8 +27,7 @@ YOLOv5🚀是一个在COCO数据集上预训练的物体检测架构和模型系
 </div>
 
 
-## <div align="center">文档</div>
-
+## <div align="center">YOLOv5文档</div>
 请参阅[YOLOv5 Docs](https://docs.ultralytics.com)，了解有关训练、测试和部署的完整文件。
 
 ## <div align="center">快速上手</div>
@@ -36,7 +35,7 @@ YOLOv5🚀是一个在COCO数据集上预训练的物体检测架构和模型系
 <details open>
 <summary>安装</summary>
 
-下载本仓库，然后确保在[**Python>=3.7.0**](https://www.python.org/) 的环境中使用并安装 [requirements.txt](https://github.com/Lucid1ty/Yolov5ForCSGO/blob/main/requirements.txt)，包括[**PyTorch>=1.7**](https://pytorch.org/get-started/locally/)。
+下载本仓库，然后确保在[**Python>=3.7.0**](https://www.python.org/) 的环境中使用并安装 [requirements.txt](https://github.com/Lucid1ty/Yolov5ForCSGO/blob/main/requirements.txt)，包括[**PyTorch>=1.7**](https://pytorch.org)。
 ```bash
 pip install -r requirements.txt
 ```
@@ -57,7 +56,7 @@ pip install -r requirements.txt
 
 ## <div align="center">贡献</div>
 
-我们重视您的意见! 我们希望给大家提供尽可能的简单和透明的方式对 Yolov5ForCSGO 做出贡献。开始之前请先点击并查看我们的 [贡献指南](../CONTRIBUTING.md)
+开始之前请先点击并查看 : [贡献指南](../CONTRIBUTING.md)
 
 
 ## <div align="center">联系</div>
