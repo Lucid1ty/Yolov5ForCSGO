@@ -59,6 +59,7 @@ pip install -r requirements.txt
 
 
 </details>
+
 ## <div align="center">Contribute</div>
 
 Please see [Contributing Guide](CONTRIBUTING.md) to get started,Thank you to all our contributors!
