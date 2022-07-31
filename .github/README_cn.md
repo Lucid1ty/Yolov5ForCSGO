@@ -44,7 +44,7 @@ pip install -r requirements.txt
 <details open>
 <summary>使用</summary>
 <ul>
-<li>请使用管理员身份打开你的Pycharm(或者别的IDE)，然后在CSGO设置中将鼠标的输入方式改为原生输入</li>
+<li>请使用管理员身份打开你的Pycharm(或者别的IDE)，然后在CSGO的设置中 : 鼠标&键盘 -> 原生输入 -> 关闭</li>
 <li>如果你没有权重文件并且想直接用我给你提供的权重文件，那么直接运行 aim-csgo 目录下的 main.py</li>
 <li>如果你已经有了权重文件(类似于 xxx.pt)并且不想用我给你提供的权重文件，那么直接打开 aim-csgo/CSGOModels 这个目录，将自己的权重文件放进去，然后打开 aim-csgo/cs_model.py ，将第 13 行代码修改(改为你自己的权重文件路径)。然后运行 main.py</li>
 <li>如果你没有权重文件又不想用我提供的权重文件，那么请先训练自己的权重文件，然后参考上一条</li>
