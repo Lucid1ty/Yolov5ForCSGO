@@ -41,4 +41,4 @@ thop>=0.1.0  # FLOPs computation
 # pycocotools>=2.0  # COCO mAP
 # roboflow
 pynput
-pywin32==302 # Needs to be installed correctly,see more in : https://github.com/Lucid1ty/Yolov5ForCSGO/blob/dev/InstallationTutorial/en/pywin32.md
+pywin32==302 # Needs to be installed correctly,see more in : https://github.com/Lucid1ty/Yolov5ForCSGO/blob/main/InstallationTutorial/en/pywin32.md
