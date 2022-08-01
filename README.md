@@ -77,3 +77,8 @@ For Yolov5ForCSGO bugs and feature requests please visit [GitHub Issues](https:/
 </div>
 
 [assets]: https://github.com/Lucid1ty/Yolov5ForCSGO/releases
+
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Lucid1ty/Yolov5ForCSGO&type=Timeline)](https://star-history.com/#Lucid1ty/Yolov5ForCSGO&Timeline)
