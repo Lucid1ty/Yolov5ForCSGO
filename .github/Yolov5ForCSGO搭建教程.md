@@ -309,5 +309,5 @@ win32api.SetCursorPos((int(LEFT + btc[0]), int(TOP + btc[1])))
 
 ### 8. 迭代升级
 
-循环训练，增加精度...
+循环训练，增加精度
 
