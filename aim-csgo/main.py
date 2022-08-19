@@ -17,6 +17,10 @@ import pynput   # Mouse control
 from mouse_control import lock
 
 
+CUDA_INFO = 'YES' if torch.cuda.is_available() else 'No'
+print('CUDA available : ' + CUDA_INFO)
+
+
 # Select GPU or CPU
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 half = device != 'cpu'
