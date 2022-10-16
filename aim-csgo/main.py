@@ -13,21 +13,19 @@ import win32con
 import torch
 from utils.general import non_max_suppression, scale_coords, xyxy2xywh
 from utils.augmentations import letterbox
-import pynput   # Mouse control
+import pynput  # Mouse control
 from mouse_control import lock
-
 
 CUDA_INFO = 'YES' if torch.cuda.is_available() else 'No'
 print('CUDA available : ' + CUDA_INFO)
-
 
 # Select GPU or CPU
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 half = device != 'cpu'
 imgsz = 640
 
-conf_thres = 0.8    # Confidence
-iou_thres = 0.05    # NMS IoU threshold
+conf_thres = 0.8  # Confidence
+iou_thres = 0.05  # NMS IoU threshold
 
 # Screen resolution
 x, y = (1920, 1080)
@@ -37,7 +35,7 @@ model = load_model()
 stride = int(model.stride.max())
 names = model.module.names if hasattr(model, 'module') else model.names
 
-lock_mode = False   # Auto aim mode,use mouse side button(mouse button 5) to open
+lock_mode = False  # Auto aim mode,use mouse side button(mouse button 5) to open
 
 mouse = pynput.mouse.Controller()
 
@@ -60,7 +58,7 @@ def on_move(x, y):
 
 def on_click(x, y, button, pressed):
     global lock_mode
-    if pressed and button == button.x2:   # mouse button 5
+    if pressed and button == button.x2:  # mouse button 5
         lock_mode = not lock_mode
         print('lock mode', 'no' if lock_mode else 'off')
 
@@ -74,7 +72,6 @@ listener = pynput.mouse.Listener(
     on_click=on_click,
     on_scroll=on_scroll)
 listener.start()
-
 
 # If you use the blocking version, you need to indent all of the following code and comment out the following While statement
 while True:
@@ -111,13 +108,13 @@ while True:
             for *xyxy, conf, cls in reversed(det):
                 xywh = (xyxy2xywh(torch.tensor(xyxy).view(1, 4)) / gn).view(-1).tolist()
                 line = (cls, *xywh)
-                aim = ('%g ' * len(line)).rstrip() % line   # str
-                aim = aim.split(' ')    # list
+                aim = ('%g ' * len(line)).rstrip() % line  # str
+                aim = aim.split(' ')  # list
                 aims.append(aim)
 
         if len(aims):
             if lock_mode:
-                lock(aims, mouse, x, y)   # Aim at the target
+                lock(aims, mouse, x, y)  # Aim at the target
 
             for i, det in enumerate(aims):
                 _, x_center, y_center, width, height = det
@@ -125,9 +122,8 @@ while True:
                 y_center, height = re_y * float(y_center), re_y * float(height)
                 top_left = (int(x_center - width / 2.), int(y_center - height / 2.))
                 bottom_right = (int(x_center + width / 2.)), (int(y_center + height / 2.))
-                color = (0, 255, 0)    # Show targets with green boxes
+                color = (0, 255, 0)  # Show targets with green boxes
                 cv2.rectangle(img0, top_left, bottom_right, color, thickness=3)
-
 
     cv2.namedWindow('csgo-detect', cv2.WINDOW_NORMAL)
     cv2.resizeWindow('csgo-detect', re_x // 3, re_y // 3)
