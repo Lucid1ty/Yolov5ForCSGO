@@ -2,12 +2,6 @@
 
 # Yolov5ForCSGO
 
-  <p>
-    <a align="center" href="https://github.com/Lucid1ty/Yolov5ForCSGO" target="_blank">
-      <img width="850" src="https://raw.githubusercontent.com/Lucid1ty/images/main/picture/WeChat%20Image_20221016201232.jpg"></a>
-  </p>
-
-
 English | [简体中文](https://github.com/Lucid1ty/Yolov5ForCSGO/blob/main/.github/README_cn.md)
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/Lucid1ty/Yolov5ForCSGO?style=social)
