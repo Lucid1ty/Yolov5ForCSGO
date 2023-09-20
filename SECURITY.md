@@ -4,7 +4,7 @@ At Yolov5ForCSGO, the security of our users' data and systems is of utmost impor
 
 ## Snyk Scanning
 
-We use Snyk to regularly scan all Ultralytics repositories for vulnerabilities and security issues. Our goal is to identify and remediate any potential threats as soon as possible, to minimize any risks to our users.
+We use Snyk to regularly scan all repositories for vulnerabilities and security issues. Our goal is to identify and remediate any potential threats as soon as possible, to minimize any risks to our users.
 
 ## GitHub CodeQL Scanning
 
