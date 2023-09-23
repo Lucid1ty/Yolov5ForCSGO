@@ -2,6 +2,8 @@
 
 # Yolov5ForCSGO
 
+![detectwindow.png](https://s2.loli.net/2023/09/23/8fuIMHGNLDRvZca.png)
+
 English | [简体中文](https://github.com/Lucid1ty/Yolov5ForCSGO/blob/main/.github/README_cn.md)
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/Lucid1ty/Yolov5ForCSGO?style=social)
@@ -11,8 +13,6 @@ English | [简体中文](https://github.com/Lucid1ty/Yolov5ForCSGO/blob/main/.gi
 <div>
 
 </div>
-
-
 <p>
    This project uses <a href="https://github.com/ultralytics/yolov5">YOLOv5</a> to realize character detection in CSGO games and auto aim
 
@@ -87,5 +87,3 @@ https://www.bilibili.com/video/BV1b64y1q7sC
 ## <div align="center">Star History</div>
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Lucid1ty/Yolov5ForCSGO&type=Timeline)](https://star-history.com/#Lucid1ty/Yolov5ForCSGO&Timeline)
-
-
