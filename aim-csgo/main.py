@@ -60,7 +60,7 @@ def on_click(x, y, button, pressed):
     global lock_mode
     if pressed and button == button.x2:  # mouse button 5
         lock_mode = not lock_mode
-        print('lock mode', 'no' if lock_mode else 'off')
+        print('Lock mode:', 'ON' if lock_mode else 'OFF')
 
 
 def on_scroll(x, y, dx, dy):
@@ -125,12 +125,12 @@ while True:
                 color = (0, 255, 0)  # Show targets with green boxes
                 cv2.rectangle(img0, top_left, bottom_right, color, thickness=3)
 
-    cv2.namedWindow('csgo-detect', cv2.WINDOW_NORMAL)
-    cv2.resizeWindow('csgo-detect', re_x // 3, re_y // 3)
-    cv2.imshow('csgo-detect', img0)
+    cv2.namedWindow('detect', cv2.WINDOW_NORMAL)
+    cv2.resizeWindow('detect', re_x // 3, re_y // 3)
+    cv2.imshow('detect', img0)
 
-    hwnd = win32gui.FindWindow(None, 'csgo-detect')
-    CVRETC = cv2.getWindowImageRect('csgo-detect')
+    hwnd = win32gui.FindWindow(None, 'detect')
+    CVRETC = cv2.getWindowImageRect('detect')
     win32gui.SetWindowPos(hwnd, win32con.HWND_TOPMOST, 0, 0, 0, 0, win32con.SWP_NOMOVE | win32con.SWP_NOSIZE)
 
     # Press q to end the program
